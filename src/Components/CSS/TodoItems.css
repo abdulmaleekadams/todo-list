@@ -1,0 +1,42 @@
+.todoitems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todoitems-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.checkicon,
+.deleteicon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.checkicon {
+  border: 1px solid #ff6739;
+  border-radius: 50%;
+
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.done .checkicon {
+  background: #ff6739;
+  color: #fff;
+}
+
+.checkicon img{
+    transition: all 0.5s ease-in-out;
+}
+.done .checkicon img{
+    filter: invert();
+}
+
+.done .todoitems-text{
+    text-decoration: line-through;
+}
